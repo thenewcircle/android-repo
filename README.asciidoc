@@ -1,0 +1,4 @@
+= About Marakana Repo
+
+Marakana Repo is a git repository of other Marakana git repositories, based on http://source.android.com/source/version-control.html[Google's ++repo++ tool].
+
