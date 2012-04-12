@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- See .repo/repo/docs/manifest-format.txt -->
 <manifest>
+  <!-- See .repo/repo/docs/manifest-format.txt -->
 
   <remote  name="android"
            fetch="." />
