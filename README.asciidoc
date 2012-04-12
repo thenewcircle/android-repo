@@ -1,4 +1,4 @@
-= About Marakana Repo
+= About Marakana Android Repo
 
-Marakana Repo is a git repository of other Marakana git repositories, based on http://source.android.com/source/version-control.html[Google's ++repo++ tool].
+This git repository aggregates other Marakana Android-related git repositories using Google's http://source.android.com/source/version-control.html[++repo++] tool and the http://code.google.com/p/git-repo/source/browse/docs/manifest-format.txt?name=v1.8.1[manifest file].
 
