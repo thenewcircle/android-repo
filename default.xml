@@ -10,5 +10,6 @@
 
   <project path="android/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="android/VideoCaptureDemo" name="VideoCaptureDemo" />
+  <project path="android/AudioRecorderDemo" name="AudioRecorderDemo" />
 
 </manifest>
