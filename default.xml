@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- See .repo/repo/docs/manifest-format.txt -->
 <manifest>
 
   <remote  name="android"
-           fetch="."
-           review="https://android-review.googlesource.com/" />
+           fetch="." />
+
   <default revision="master"
            remote="android"
            sync-j="4" />
 
-  <project path="android/PhotoCaptureDemo" name="PhotoCaptureDemo" />
-  <project path="android/VideoCaptureDemo" name="VideoCaptureDemo" />
-  <project path="android/AudioRecorderDemo" name="AudioRecorderDemo" />
+  <project path="code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
+  <project path="code/VideoCaptureDemo" name="VideoCaptureDemo" />
+  <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
+  <project path="code/AudioPlayerDemo" name="AudioPlayerDemo" />
+  <project path="code/SensorDemo" name="SensorDemo" />
 
 </manifest>
