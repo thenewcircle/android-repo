@@ -9,6 +9,7 @@
            remote="android"
            sync-j="4" />
 
+  <project path="courseware" name="courseware-android" />
   <project path="code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
