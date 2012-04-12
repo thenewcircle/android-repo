@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="android"
-           fetch=".."
+           fetch="."
            review="https://android-review.googlesource.com/" />
   <default revision="master"
            remote="android"
