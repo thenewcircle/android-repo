@@ -68,13 +68,10 @@ $ git clone git@github.com:marakana/android-repo.git
 $ cd android-repo
 ----
 +
-. Add your project (e.g. a demo app) to the ++default.xml++ manifest file:
+. Register your project (e.g. a demo app) as a new entry in the ++default.xml++ manifest file:
 +
-.++default.xml++:
 ----
-...
-  <project path="code/MyDemo" name="MyDemo" />
-...
+<project path="code/MyDemo" name="MyDemo" />
 ----
 +
 NOTE: The ++path++ attribute of ++<project .../>++ refers to the local directory name for our project where as the ++name++ attribute refers to the remote git repository name (relative to the parent of this repository).
