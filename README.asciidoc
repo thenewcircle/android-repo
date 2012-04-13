@@ -18,6 +18,7 @@ $ mkdir -p ~/bin
 $ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
 ----
 +
+----
 $ chmod +x ~/bin/repo
 ----
 +
