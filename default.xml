@@ -15,5 +15,6 @@
   <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
   <project path="code/AudioPlayerDemo" name="AudioPlayerDemo" />
   <project path="code/SensorDemo" name="SensorDemo" />
+  <project path="code/FibonacciNative" name="FibonacciNative" />
 
 </manifest>
