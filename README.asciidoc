@@ -4,6 +4,8 @@ This git repository aggregates other Marakana Android-related git repositories u
 
 Specifically, this tool clones Marakana Android courseware repo as well as various Android code project repos into ++courseware/++ and ++code/++ directories.
 
+WARNING: https://github.com/marakana/courseware-android[Marakana Android courseware] is a private repo.
+
 == Getting Started
 
 . Install the http://source.android.com/source/version-control.html[++repo++] tool:
@@ -61,11 +63,10 @@ $ git push
 
 To add a new project to repo, do the following:
 
-. Clone this repository:
+. Go into the manifests directory:
 +
 ----
-$ git clone git@github.com:marakana/android-repo.git
-$ cd android-repo
+$ cd /path/to/android/.repo/manifests/
 ----
 +
 . Register your project (e.g. a demo app) as a new entry in the ++default.xml++ manifest file:
@@ -83,6 +84,7 @@ TIP: See ++.repo/repo/docs/manifest-format.txt++ for more info on the syntax of 
 ----
 $ git commit -m "Added a new project (MyDemo)" default.xml
 $ git push
+$ cd -
 ----
 +
 . Test by syncing your main repo tree (assuming ++android/++):
