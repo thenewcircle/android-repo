@@ -2,3 +2,99 @@
 
 This git repository aggregates other Marakana Android-related git repositories using Google's http://source.android.com/source/version-control.html[++repo++] tool and the http://code.google.com/p/git-repo/source/browse/docs/manifest-format.txt?name=v1.8.1[manifest file].
 
+Specifically, this tool clones Marakana Android courseware repo as well as various Android code project repos into ++courseware/++ and ++code/++ directories.
+
+== Getting Started
+
+. Install the http://source.android.com/source/version-control.html[++repo++] tool:
++
+----
+$ mkdir -p ~/bin
+$ curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
+$ chmod +x ~/bin/repo
+----
++
+. Set up a working directory (e.g. ++android/++):
++
+----
+$ mkdir android
+$ cd android
+----
++
+. Initialize repo:
++
+----
+$ repo init -u git@github.com:marakana/android-repo.git
+----
++
+. Pull the files:
++
+----
+$ repo sync
+----
+
+== Using
+
+* To update the working tree to the latest revision, do:
++
+----
+$ cd /path/to/android
+$ repo sync
+----
++
+* To check for local changes across all the nested repos, do:
++
+----
+$ cd /path/to/android
+$ repo status
+----
++
+* To commit and push local changes upstream, change into the nested git repository where you've made changes (e.g. to ++courseware/++) and use normal git commands:
++
+----
+$ cd /path/to/android/courseware
+$ git commit -m "some change" somefile.asc
+$ git push
+----
+
+== Extending
+
+To add a new project to repo, do the following:
+
+. Clone this repository:
++
+----
+$ git clone git@github.com:marakana/android-repo.git
+$ cd android-repo
+----
++
+. Add a new ++<project .../>++ (e.g. a demo app) to the ++default.xml++ manifest file:
++
+.++default.xml++:
+[source,xml]
+----
+<manifest>
+  <remote ... />
+  <default ... />
+  <project ... />
+  <project path="code/MyDemo" name="MyDemo" />
+</manifest>
+----
++
+NOTE: The ++path++ attribute of ++<project .../>++ refers to the local directory name for our project where as the ++name++ attribute refers to the remote git repository name (relative to the parent of this repository).
++
+TIP: See ++.repo/repo/docs/manifest-format.txt++ for more info on the syntax of this manifest file.
++
+. Push your changes upstream
++
+----
+$ git commit -m "Added a new project (MyDemo)" default.xml
+$ git push
+----
++
+. Test by syncing your main repo tree (assuming ++android/++):
++
+----
+$ cd /path/to/android
+$ repo sync
+----
