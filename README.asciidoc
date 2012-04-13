@@ -71,7 +71,6 @@ $ cd android-repo
 . Add a new ++<project .../>++ (e.g. a demo app) to the ++default.xml++ manifest file:
 +
 .++default.xml++:
-[source,xml]
 ----
 <manifest>
   <remote ... />
