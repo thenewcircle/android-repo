@@ -21,5 +21,7 @@
   <project path="code/DevicePolicyDemo" name="DevicePolicyDemo" />
   <project path="code/SecureNote" name="SecureNote" />
   <project path="code/RssDemo" name="RssDemo" />
+  <project path="device/marakana/alpha" name="alpha" />
+  <project path="device/marakana/alpha_sdk_addon" name="alpha_sdk_addon" />
 
 </manifest>
