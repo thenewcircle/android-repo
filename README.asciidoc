@@ -72,10 +72,18 @@ $ git push
 
 To add a new project to repo, do the following:
 
-. Go into the manifests directory:
+. Checkout the https://github.com/marakana/android-repo[android-repo] Git repository:
 +
 ----
-$ cd /path/to/android/.repo/manifests/
+$ cd /somewhere-outside-android/
+----
++
+----
+$ git clone git@github.com:marakana/android-repo.git
+----
++
+----
+$ cd android-repo
 ----
 +
 . Register your project (e.g. a demo app) as a new entry in the ++default.xml++ manifest file:
@@ -86,7 +94,7 @@ $ cd /path/to/android/.repo/manifests/
 +
 NOTE: The ++path++ attribute of ++<project .../>++ refers to the local directory name for our project where as the ++name++ attribute refers to the remote git repository name (relative to the parent of this repository).
 +
-TIP: See ++.repo/repo/docs/manifest-format.txt++ for more info on the syntax of this manifest file.
+TIP: See http://code.google.com/p/git-repo/source/browse/docs/manifest-format.txt?name=v1.8.1[manifest-format.txt] for more info on the syntax of this manifest file.
 +
 . Push your changes upstream
 +
@@ -101,7 +109,7 @@ $ git push
 . Test by syncing your main repo tree (assuming ++android/++):
 +
 ----
-$ cd -
+$ cd /path/to/android/
 ----
 +
 ----
