@@ -14,7 +14,6 @@
   <project path="code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
   <project path="code/AudioPlayerDemo" name="AudioPlayerDemo" />
-  <project path="code/SensorDemo" name="SensorDemo" />
   <project path="code/FibonacciNative" name="FibonacciNative" />
   <project path="code/FibonacciBinderDemo" name="FibonacciBinderDemo" />
   <project path="code/FibonacciAsyncBinderDemo" name="FibonacciAsyncBinderDemo" />
