@@ -2,9 +2,15 @@
 
 This git repository aggregates other Marakana Android-related git repositories using Google's http://source.android.com/source/version-control.html[++repo++] tool and the http://code.google.com/p/git-repo/source/browse/docs/manifest-format.txt?name=v1.8.1[manifest file].
 
-Specifically, this tool clones Marakana Android courseware repo as well as various Android code project repos into ++courseware/++ and ++code/++ directories.
+Specifically, http://source.android.com/source/using-repo.html[this tool] clones https://github.com/marakana/courseware-android[Marakana Android courseware repo] as well as various Android code project repos into the following directories:
 
-WARNING: https://github.com/marakana/courseware-android[Marakana Android courseware] is a private repo.
+* ++courseware/++
+** ++code++ -> ++../code/++
+** ++device++ -> ++../device/++
+* ++code/++
+* ++device/++
+
+WARNING: https://github.com/marakana/courseware-android is a private repo.
 
 == Getting Started
 
@@ -25,7 +31,13 @@ $ chmod +x ~/bin/repo
 . Set up a working directory (e.g. ++android/++):
 +
 ----
-$ mkdir -p android && cd android
+$ mkdir -p android
+----
++
+. Change to this directory:
++
+----
+cd android
 ----
 +
 . Initialize repo:
@@ -39,77 +51,106 @@ $ repo init -u git@github.com:marakana/android-repo.git
 ----
 $ repo sync
 ----
++
+. Switch all projects to the ++master++ branch:
++
+----
+$ repo start master --all
+----
 
 == Using
 
-* To update the working tree to the latest revision, do:
+=== Updating the working tree to the latest revision
+
+. Sync first
 +
 ----
 $ repo sync
 ----
 +
-* To check for local changes across all the nested repos, do:
+. Switch any newly added projects to the ++master++ branch:
 +
+----
+$ repo start master --all
+----
+
+=== Checking for local changes
+
 ----
 $ repo status
 ----
-+
-* To commit and push local changes upstream, change into the nested git repository where you've made changes (e.g. to ++courseware/++) and use normal git commands:
+
+=== Committing and publishing changes
+
+To commit and push local changes upstream, change into the nested git repository where you've made changes (e.g. to ++courseware/++) and use normal ++git++ commands:
+
+. Change to the project's directory:
 +
 ----
 $ cd /path/to/android/courseware
 ----
 +
+. Stage the changed file:
++
 ----
-$ git commit -m "some change" somefile.asc
+$ git add new-or-modified-file.asc
 ----
++
+. Commit:
++
+----
+$ git commit -m "some change"
+----
++
+. Push:
 +
 ----
 $ git push
 ----
 
-== Extending
+
+== Adding new Git repos
 
 To add a new project to repo, do the following:
 
-. Checkout the https://github.com/marakana/android-repo[android-repo] Git repository:
+. Get to the manifest directory:
 +
 ----
-$ cd /somewhere-outside-android/
+$ cd .repo/manifests/
 ----
 +
-----
-$ git clone git@github.com:marakana/android-repo.git
-----
+. Make sure that you are on the ++master++ branch:
 +
 ----
-$ cd android-repo
+$ git checkout -b master
 ----
 +
 . Register your project (e.g. a demo app) as a new entry in the ++default.xml++ manifest file:
 +
 ----
-<project path="code/MyDemo" name="MyDemo" />
+    <project path="code/MyDemo" name="MyDemo" />
 ----
 +
 NOTE: The ++path++ attribute of ++<project .../>++ refers to the local directory name for our project where as the ++name++ attribute refers to the remote git repository name (relative to the parent of this repository).
 +
 TIP: See http://code.google.com/p/git-repo/source/browse/docs/manifest-format.txt?name=v1.8.1[manifest-format.txt] for more info on the syntax of this manifest file.
 +
-. Push your changes upstream
+. Commit your changes
 +
 ----
 $ git commit -m "Added a new project (MyDemo)" default.xml
 ----
 +
+. Push your changes upstream
++
 ----
 $ git push
 ----
 +
-. Test by syncing your main repo tree (assuming ++android/++):
+. Test by syncing your main repo tree:
 +
 ----
-$ cd /path/to/android/
+$ cd -
 ----
 +
 ----

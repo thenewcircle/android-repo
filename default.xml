@@ -2,14 +2,15 @@
 <manifest>
   <!-- See .repo/repo/docs/manifest-format.txt -->
 
-  <remote  name="android"
+  <remote  name="origin"
            fetch="." />
 
   <default revision="master"
-           remote="android"
+           remote="origin"
            sync-j="4" />
 
   <project path="courseware" name="courseware-android" />
+
   <project path="code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
@@ -21,7 +22,9 @@
   <project path="code/SecureNote" name="SecureNote" />
   <project path="code/RssDemo" name="RssDemo" />
   <project path="code/SensorDemo" name="SensorDemo" />
+  <project path="code/AntiMalware" name="AntiMalware" />
   <project path="code/AndroidRecoveryDemo" name="AndroidRecoveryDemo" />
+  <project path="code/LifecycleDemo" name="LifecycleDemo" />
 
   <project path="device/marakana/alpha" name="alpha" />
   <project path="device/marakana/alpha_sdk_addon" name="alpha_sdk_addon" />
