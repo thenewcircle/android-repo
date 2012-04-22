@@ -21,6 +21,7 @@
   <project path="code/DevicePolicyDemo" name="DevicePolicyDemo" />
   <project path="code/SecureNote" name="SecureNote" />
   <project path="code/RssDemo" name="RssDemo" />
+  <project path="code/ParserLib" name="ParserLib" />
   <project path="code/SensorDemo" name="SensorDemo" />
   <project path="code/AntiMalware" name="AntiMalware" />
   <project path="code/AndroidRecoveryDemo" name="AndroidRecoveryDemo" />
