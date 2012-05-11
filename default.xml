@@ -28,6 +28,7 @@
   <project path="code/LifecycleDemo" name="LifecycleDemo" />
   <project path="code/LogNative" name="LogNative" />
   <project path="code/LogBinderDemo" name="LogBinderDemo" />
+  <project path="code/AudioTrackPlayerDemo" name="AudioTrackPlayerDemo" />
 
   <project path="device/marakana/alpha" name="alpha" />
   <project path="device/marakana/alpha_sdk_addon" name="alpha_sdk_addon" />
