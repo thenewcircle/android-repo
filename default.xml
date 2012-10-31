@@ -32,6 +32,7 @@
   <project path="code/JniExamples" name="JniExamples" />
   <project path="code/StreamerWeb" name="StreamerWeb" />
   <project path="code/BluetoothScanner" name="BluetoothScanner" />
+  <project path="code/LoginWatcher" name="LoginWatcher" />
 
 
   <project path="device/marakana/alpha" name="alpha" />
