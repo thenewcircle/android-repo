@@ -11,6 +11,7 @@
 
   <project path="courseware" name="courseware-android" />
 
+  <project path="code/AndroidProjectTemplate" name="AndroidProjectTemplate" />
   <project path="code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="code/AudioRecorderDemo" name="AudioRecorderDemo" />
@@ -33,6 +34,8 @@
   <project path="code/StreamerWeb" name="StreamerWeb" />
   <project path="code/BluetoothScanner" name="BluetoothScanner" />
   <project path="code/LoginWatcher" name="LoginWatcher" />
+  <project path="code/WifiInfo" name="WifiInfo" />
+  <project path="code/WifiAnalyzer" name="WifiAnalyzer" />
 
 
   <project path="device/marakana/alpha" name="alpha" />
