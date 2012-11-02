@@ -36,6 +36,7 @@
   <project path="code/LoginWatcher" name="LoginWatcher" />
   <project path="code/WifiInfo" name="WifiInfo" />
   <project path="code/WifiAnalyzer" name="WifiAnalyzer" />
+  <project path="code/Compass" name="Compass" />
 
 
   <project path="device/marakana/alpha" name="alpha" />
