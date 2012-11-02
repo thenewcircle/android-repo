@@ -37,6 +37,7 @@
   <project path="code/WifiInfo" name="WifiInfo" />
   <project path="code/WifiAnalyzer" name="WifiAnalyzer" />
   <project path="code/Compass" name="Compass" />
+  <project path="code/Stream" name="Stream" />
 
 
   <project path="device/marakana/alpha" name="alpha" />
