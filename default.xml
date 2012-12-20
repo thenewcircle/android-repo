@@ -38,6 +38,8 @@
   <project path="code/WifiAnalyzer" name="WifiAnalyzer" />
   <project path="code/Compass" name="Compass" />
   <project path="code/Stream" name="Stream" />
+  <project path="code/Naive" name="Naive" />
+  <project path="code/KitchenSink" name="KitchenSink" />
 
 
   <project path="device/marakana/alpha" name="alpha" />
