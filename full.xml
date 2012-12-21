@@ -23,6 +23,8 @@
   <project path="android/code/AudioTrackPlayerDemo" name="AudioTrackPlayerDemo" />
   <project path="android/code/BluetoothScanner" name="BluetoothScanner" />
   <project path="android/code/Compass" name="Compass" />
+  <project path="android/code/CurrencyConverter" name="CurrencyConverter" />
+  <project path="android/code/CurrencyConverterTest" name="CurrencyConverterTest" />
   <project path="android/code/DevicePolicyDemo" name="DevicePolicyDemo" />
   <project path="android/code/EnterpriseAndroidDemo" name="EnterpriseAndroidDemo" />
   <project path="android/code/FibonacciAsyncBinderDemo" name="FibonacciAsyncBinderDemo" />
@@ -42,6 +44,8 @@
   <project path="android/code/SensorDemo" name="SensorDemo" />
   <project path="android/code/Stream" name="Stream" />
   <project path="android/code/StreamerWeb" name="StreamerWeb" />
+  <project path="android/code/UnitConverter" name="UnitConverter" />
+  <project path="android/code/UnitConverterTest" name="UnitConverterTest" />
   <project path="android/code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="android/code/WifiAnalyzer" name="WifiAnalyzer" />
   <project path="android/code/WifiInfo" name="WifiInfo" />
