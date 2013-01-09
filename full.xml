@@ -36,7 +36,7 @@
   <project path="android/code/LogBinderDemo" name="LogBinderDemo" />
   <project path="android/code/LogNative" name="LogNative" />
   <project path="android/code/LoginWatcher" name="LoginWatcher" />
-  <project path="android/code/Naive" name="Naive" />
+  <project path="android/code/Concurrency" name="AndroidConcurrency" />
   <project path="android/code/ParserLib" name="ParserLib" />
   <project path="android/code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="android/code/RssDemo" name="RssDemo" />

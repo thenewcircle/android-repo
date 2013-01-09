@@ -39,7 +39,7 @@
   <project path="code/WifiAnalyzer" name="WifiAnalyzer" />
   <project path="code/Compass" name="Compass" />
   <project path="code/Stream" name="Stream" />
-  <project path="code/Naive" name="Naive" />
+  <project path="code/Concurrency" name="AndroidConcurrency" />
   <project path="code/KitchenSink" name="KitchenSink" />
 
 
