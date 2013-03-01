@@ -15,14 +15,17 @@
 
   <project path="android/courseware" name="courseware-android" />
 
+
   <project path="android/code/AndroidProjectTemplate" name="AndroidProjectTemplate" />
   <project path="android/code/AndroidRecoveryDemo" name="AndroidRecoveryDemo" />
   <project path="android/code/AntiMalware" name="AntiMalware" />
   <project path="android/code/AudioPlayerDemo" name="AudioPlayerDemo" />
   <project path="android/code/AudioRecorderDemo" name="AudioRecorderDemo" />
   <project path="android/code/AudioTrackPlayerDemo" name="AudioTrackPlayerDemo" />
+  <project path="android/code/Clock" name="Clock" />
   <project path="android/code/BluetoothScanner" name="BluetoothScanner" />
   <project path="android/code/Compass" name="Compass" />
+  <project path="android/code/Concurrency" name="AndroidConcurrency" />
   <project path="android/code/CurrencyConverter" name="CurrencyConverter" />
   <project path="android/code/CurrencyConverterTest" name="CurrencyConverterTest" />
   <project path="android/code/DevicePolicyDemo" name="DevicePolicyDemo" />
@@ -30,13 +33,14 @@
   <project path="android/code/FibonacciAsyncBinderDemo" name="FibonacciAsyncBinderDemo" />
   <project path="android/code/FibonacciBinderDemo" name="FibonacciBinderDemo" />
   <project path="android/code/FibonacciNative" name="FibonacciNative" />
+  <project path="android/code/FragDemo" name="FragDemo" />
+  <project path="android/code/HelloHoney" name="HelloHoney" />
   <project path="android/code/JniExamples" name="JniExamples" />
   <project path="android/code/KitchenSink" name="KitchenSink" />
   <project path="android/code/LifecycleDemo" name="LifecycleDemo" />
   <project path="android/code/LogBinderDemo" name="LogBinderDemo" />
   <project path="android/code/LogNative" name="LogNative" />
   <project path="android/code/LoginWatcher" name="LoginWatcher" />
-  <project path="android/code/Concurrency" name="AndroidConcurrency" />
   <project path="android/code/ParserLib" name="ParserLib" />
   <project path="android/code/PhotoCaptureDemo" name="PhotoCaptureDemo" />
   <project path="android/code/RssDemo" name="RssDemo" />
@@ -44,6 +48,8 @@
   <project path="android/code/SensorDemo" name="SensorDemo" />
   <project path="android/code/Stream" name="Stream" />
   <project path="android/code/StreamerWeb" name="StreamerWeb" />
+  <project path="android/code/TechTV" name="TechTV" />
+  <project path="android/code/TemplateProject" name="TemplateProject" />
   <project path="android/code/UnitConverter" name="UnitConverter" />
   <project path="android/code/UnitConverterTest" name="UnitConverterTest" />
   <project path="android/code/VideoCaptureDemo" name="VideoCaptureDemo" />
