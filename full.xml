@@ -55,6 +55,7 @@
   <project path="android/code/VideoCaptureDemo" name="VideoCaptureDemo" />
   <project path="android/code/WifiAnalyzer" name="WifiAnalyzer" />
   <project path="android/code/WifiInfo" name="WifiInfo" />
+  <project path="android/code/Yamba" name="yamba" revision="yambaII" />
 
   <project path="android/device/marakana/alpha" name="alpha" />
   <project path="android/device/marakana/alpha_sdk_addon" name="alpha_sdk_addon" />
