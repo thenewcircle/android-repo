@@ -15,6 +15,8 @@
 
   <project path="android/courseware" name="courseware-android" />
 
+  <project path="java/courseware" name="courseware-java" />
+
 
   <project path="android/code/AndroidProjectTemplate" name="AndroidProjectTemplate" />
   <project path="android/code/AndroidRecoveryDemo" name="AndroidRecoveryDemo" />
